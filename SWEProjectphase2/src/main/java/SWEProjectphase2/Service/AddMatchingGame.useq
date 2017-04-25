@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.0" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="SWEProjectphase2.UI.GameUI" project="SWEProjectphase2" 
+    file="/SWEProjectphase2/src/main/java/SWEProjectphase2/UI/GameUI.java" binary="false" label="gameUI" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="65" y="0"/>    
+    <execution id="2">      
+      <position height="1067" width="100" x="5" y="134"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="SWEProjectphase2.Service.GameService" project="SWEProjectphase2" 
+    file="/SWEProjectphase2/src/main/java/SWEProjectphase2/Service/GameService.java" binary="false" label="gameService" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="180" y="0"/>    
+    <execution id="4">      
+      <position height="1025" width="122" x="109" y="155"/>    
+    </execution>  
+  </object>  
+  <object id="52" language="java" name="org.springframework.data.repository.CrudRepository" project="SWEProjectphase2" 
+    file="C:/Users/lenovo/.m2/repository/org/springframework/data/spring-data-commons/1.13.1.RELEASE/spring-data-commons-1.13.1.RELEASE.jar" 
+    binary="true" label="Courserepository" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="7">      
+      <position height="21" width="0" x="0" y="176"/>    
+    </execution>    
+    <execution id="51">      
+      <position height="21" width="0" x="0" y="1138"/>    
+    </execution>  
+  </object>  
+  <object id="53" language="java" name="org.springframework.data.repository.CrudRepository" project="SWEProjectphase2" 
+    file="C:/Users/lenovo/.m2/repository/org/springframework/data/spring-data-commons/1.13.1.RELEASE/spring-data-commons-1.13.1.RELEASE.jar" 
+    binary="true" label="teacherrepository" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="9">      
+      <position height="21" width="0" x="0" y="218"/>    
+    </execution>  
+  </object>  
+  <object id="54" language="java" name="SWEProjectphase2.Model.Game" project="SWEProjectphase2" 
+    file="/SWEProjectphase2/src/main/java/SWEProjectphase2/Model/Game.java" binary="false" label="Mgame" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="11">      
+      <position height="21" width="0" x="0" y="260"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="302"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="21" width="0" x="0" y="428"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="21" width="0" x="0" y="512"/>    
+    </execution>    
+    <execution id="27">      
+      <position height="21" width="0" x="0" y="596"/>    
+    </execution>    
+    <execution id="35">      
+      <position height="21" width="0" x="0" y="764"/>    
+    </execution>    
+    <execution id="37">      
+      <position height="21" width="0" x="0" y="806"/>    
+    </execution>    
+    <execution id="43">      
+      <position height="21" width="0" x="0" y="932"/>    
+    </execution>  
+  </object>  
+  <object id="55" language="java" name="SWEProjectphase2.Model.Matching" project="SWEProjectphase2" 
+    file="/SWEProjectphase2/src/main/java/SWEProjectphase2/Model/Matching.java" binary="false" label="temp" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="15">      
+      <position height="21" width="0" x="0" y="344"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="386"/>    
+    </execution>    
+    <execution id="21">      
+      <position height="21" width="0" x="0" y="470"/>    
+    </execution>    
+    <execution id="25">      
+      <position height="21" width="0" x="0" y="554"/>    
+    </execution>    
+    <execution id="29">      
+      <position height="21" width="0" x="0" y="638"/>    
+    </execution>    
+    <execution id="31">      
+      <position height="21" width="0" x="0" y="680"/>    
+    </execution>    
+    <execution id="33">      
+      <position height="21" width="0" x="0" y="722"/>    
+    </execution>  
+  </object>  
+  <object id="56" language="java" name="java.io.PrintStream" project="SWEProjectphase2" 
+    file="C:/Program Files (x86)/Java/jre1.8.0_111/lib/rt.jar" binary="true" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="39">      
+      <position height="21" width="0" x="0" y="848"/>    
+    </execution>  
+  </object>  
+  <object id="57" language="java" name="org.springframework.data.repository.CrudRepository" project="SWEProjectphase2" 
+    file="C:/Users/lenovo/.m2/repository/org/springframework/data/spring-data-commons/1.13.1.RELEASE/spring-data-commons-1.13.1.RELEASE.jar" 
+    binary="true" label="Mgamerepository" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="41">      
+      <position height="21" width="0" x="0" y="890"/>    
+    </execution>    
+    <execution id="45">      
+      <position height="21" width="0" x="0" y="1012"/>    
+    </execution>  
+  </object>  
+  <object id="58" language="java" name="SWEProjectphase2.Model.Course" project="SWEProjectphase2" 
+    file="/SWEProjectphase2/src/main/java/SWEProjectphase2/Model/Course.java" binary="false" label="course" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="47">      
+      <position height="21" width="0" x="0" y="1054"/>    
+    </execution>    
+    <execution id="49">      
+      <position height="21" width="0" x="0" y="1096"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="59" interaction-operator="OPT">    
+    <interaction-operand id="60" constraint="newgame==null">      
+      <fragment refId="50"/>      
+      <fragment refId="48"/>      
+      <fragment refId="46"/>      
+      <fragment refId="44"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <message id="3" 
+    operation="AddmatchingGameinDateBase(java.lang.String,java.lang.String,SWEProjectphase2.Model.Matching):boolean" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="findOne(ID):T" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="8" operation="findOne(ID):T" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="10" operation="setCourse(SWEProjectphase2.Model.Course):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="setTeacher(SWEProjectphase2.Model.Teacher):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="Matching()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="setColumn1(java.util.ArrayList&lt;java.lang.String&gt;):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="getColumn1():java.util.ArrayList&lt;String&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="setColumn2(java.util.ArrayList&lt;java.lang.String&gt;):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="22" operation="getColumn2():java.util.ArrayList&lt;String&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="setGameName(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>  
+  <message id="26" operation="getGameName():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>  
+  <message id="28" operation="setCourse(SWEProjectphase2.Model.Course):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="29"/>  
+  </message>  
+  <message id="30" operation="setTeacher(SWEProjectphase2.Model.Teacher):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="31"/>  
+  </message>  
+  <message id="32" operation="setModelanswer(java.util.ArrayList&lt;java.lang.String&gt;):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="33"/>  
+  </message>  
+  <message id="34" operation="getModelanswer():java.util.ArrayList&lt;String&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="35"/>  
+  </message>  
+  <message id="36" operation="getGameName():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="37"/>  
+  </message>  
+  <message id="38" operation="println(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="39"/>  
+  </message>  
+  <message id="40" operation="findOne(ID):T" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="41"/>  
+  </message>  
+  <message id="42" operation="getGameName():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="43"/>  
+  </message>  
+  <message id="44" operation="save(S):S" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="45"/>  
+  </message>  
+  <message id="46" operation="getCounter():int" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="47"/>  
+  </message>  
+  <message id="48" operation="setCounter(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="49"/>  
+  </message>  
+  <message id="50" operation="save(S):S" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="51"/>  
+  </message>
+</sequence-diagram>
