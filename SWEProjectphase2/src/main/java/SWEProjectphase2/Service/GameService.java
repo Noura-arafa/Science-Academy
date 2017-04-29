@@ -65,12 +65,12 @@ public class GameService {
 		return false;
     }
 	
-	public  ArrayList<String> ShowGamesInCourse(String coursename){
+	public  ArrayList<Game> ShowGamesInCourse(String coursename){
 		Course course = Courserepository.findOne(coursename);
 		int c = course.getCounter();
 		ArrayList<Complete> cgame =  (ArrayList<Complete>) Cgamerepository.findAll();
 		ArrayList<Matching> mgame =  (ArrayList<Matching>) Mgamerepository.findAll();
-		 ArrayList<String> coursegames = new  ArrayList<String>();
+		 ArrayList<Game> coursegames = new  ArrayList<Game>();
 		if(cgame !=null && c !=0)
 		{
 			for(int i=0; i<cgame.size(); i++)
@@ -79,24 +79,29 @@ public class GameService {
 					break;
 				if(cgame.get(i).getCourse().getCourseName().equals(coursename))
 				{
-					coursegames.add(cgame.get(i).getGameName());
+					//coursegames.add(cgame.get(i).getGameName());
+					coursegames.add(cgame.get(i));
 					c--;
 				}
 			}
 		}
 		if(mgame !=null && c!=0)
 		{
+			System.out.println("yessss " + mgame.get(0).getGameName());
 			for(int i=0; i<cgame.size(); i++)
 			{
 				if(c == 0)
 					break;
 				if(mgame.get(i).getCourse().getCourseName().equals(coursename))
 				{
-					coursegames.add(mgame.get(i).getGameName());
+					//coursegames.add(mgame.get(i).getGameName());
+					coursegames.add(mgame.get(i));
 					c--;
 				}
 			}
 		}
+		System.out.println("sizeeee: " + coursegames.size());
+		//System.out.println("ganmee: " + coursegames.get(0).getGameName());
 		return coursegames;
 	}
 	public Game playgame(String gamename) {

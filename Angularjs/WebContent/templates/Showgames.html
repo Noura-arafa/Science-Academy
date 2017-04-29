@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Dark Form</title>
+  
+  
+  <script src = "angular.min.js"></script>
+  	
+  	<script src = "../static/js/Showgames.js"></script>
+      <link rel="stylesheet" href="../static/css/style.css">
+
+  
+</head>
+
+<body ng-app="showgame_app" ng-controller="showgameController">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+<div class='login'>
+  <h2>Games</h2>
+   <input class='animated' type='submit' value='Create Game'  ng-click='creategames()'>
+ <div  ng-repeat="game in games">
+     <input class='animated' type='submit' value='gamename {{game.gameName}}'  ng-click='showgamesincourses()'>
+    </div>
+ 
+ 
+</div>
+  
+   
+
+</body>
+</html>

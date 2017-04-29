@@ -17,7 +17,7 @@ public class CourseService {
 	private  CourseRepository Courserepository;
 	@Autowired
 	private TeacherRepository teacherrepository ;
-    public  Map<String,String> CreateCourse(String courseName, String CourseOwner){
+    public Course CreateCourse(String courseName, String CourseOwner){
 	  Course course =  Courserepository.findOne(courseName);
 	  Course newcourse = new Course();
 	  Teacher teacher=new Teacher();
@@ -29,22 +29,23 @@ public class CourseService {
 		  newcourse.setTeacher(teacher);
 		  Courserepository.save(newcourse);
 		  showcourse.put(newcourse.getCourseName(), newcourse.getTeacher().getName());
-		  return showcourse;
+		  return newcourse;
 	  }
 	  
 	  return null;
 		 
 	 }
-     public  Map<String,String> ShowALLcourese(){
+     public ArrayList<Course> ShowALLcoureses(){
     	 ArrayList<Course> courses = (ArrayList<Course>) Courserepository.findAll();
     	 if(courses != null)
     	 {
-    		 Map<String,String> showcourse = new HashMap<String, String>();
-        	 for(int i=0; i<courses.size();i++)
-        	 {
-        		 showcourse.put(courses .get(i).getCourseName(), courses .get(i).getTeacher().getName());
-        	 }
-        	 return showcourse;
+//    		 Map<String,String> showcourse = new HashMap<String, String>();
+//        	 for(int i=0; i<courses.size();i++)
+//        	 {
+//        		 showcourse.put(courses .get(i).getCourseName(), courses .get(i).getTeacher().getName());
+//        	 }
+    		
+        	 return courses;
     	 }
     	
     	 return null;

@@ -19,18 +19,36 @@ public class UserService {
 	private TeacherRepository teacherrepository ;
 	@Autowired
 	private StudentRepository studentreposirory;
+
+	private Teacher logedinteacher = null;
 	
+
+	private Student logedinstudent=null;
+	
+	/*
+	 * define a new arraylist in ordered to but it in user as empty playedgamelist
+	 */
+	public Teacher logedinTeacher(){
+		return logedinteacher;
+	}
+	public Student logedinStudent(){
+		return logedinstudent;
+	}
 	public String SignupAsTeacher(Teacher user){
 		String checkemail;
 		checkemail=user.getEmail();
 		Teacher newuser=new Teacher();
+		
 		newuser=teacherrepository.findOne(checkemail);
 		ArrayList<String> temp = new ArrayList<String>();
 		if(newuser==null){
+			System.out.println("d5l fe al nulll");
 			user.setPlayedgame(temp);
 			teacherrepository.save(user);
+			logedinteacher = newuser;
 			return user.getEmail();
 		}
+		
 		return null;
 	}
 	public String SignupAsStudet(Student user){
@@ -42,6 +60,7 @@ public class UserService {
 		if(newuser==null){
 			user.setPlayedgame(temp);
 			studentreposirory.save(user);
+			logedinstudent = newuser;
 			return user.getEmail();
 		}
 		return null;
@@ -57,15 +76,32 @@ public class UserService {
 		if(tuser==null){
 			suser=studentreposirory.findOne(email);
 			if(suser!=null){
-				if(suser.getPassword().equals(password))
-				     return suser.getEmail();
+				if(suser.getPassword().equals(password)){
+					logedinstudent = suser;
+					return suser.getEmail();
+				}
+					
 			}
 		}
 		else{
-			if(tuser.getPassword().equals(password))
-			    return tuser.getEmail();
+			if(tuser.getPassword().equals(password)){
+				logedinteacher = tuser;
+				return tuser.getEmail();
+			}
+			    
+				
 		}
 		return null;
+	}
+	
+	public void logout(){
+		if(logedinteacher == null)
+		{
+			logedinstudent = null;
+		}
+		else{
+			logedinteacher = null;
+		}
 	}
 	
 
