@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Dark Form</title>
+  
+  
+  <script src = "angular.min.js"></script>
+  	
+  	<script src = "../static/js/playcompletegame.js"></script>
+      <link rel="stylesheet" href="../static/css/gamestyle.css">
+
+  
+</head>
+
+<body ng-app="playcomplete_app" ng-controller="playcompleteController">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+<div class='login'>
+  <h2>{{game.gameName}}</h2>  
+  <h2>Complete</h2>  
+ <div  ng-repeat="ques in game.question">
+ <li id="para">{{ques}}</li>
+ <br>
+    </div>
+  <h2>Answer</h2>  
+ <input name='answer1' placeholder='answer1' type='text' ng-model='answer1' required ='true'>
+  <input  name='answer2' placeholder='answer2' type='text' ng-model='answer2' required = 'true'>
+  <input name='answer3' placeholder='answer3' type='text' ng-model ='answer3' required='true'>
+  <input class='animated' type='submit' value='Done' ng-click='submitanswer()'> 
+  
+</div>
+  
+   
+
+</body>
+</html>

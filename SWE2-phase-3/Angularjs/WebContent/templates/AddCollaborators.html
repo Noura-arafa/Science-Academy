@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Dark Form</title>
+  
+  
+  <script src = "angular.min.js"></script>
+  	
+  	<script src = "../static/js/AddCollaborators.js"></script>
+      <link rel="stylesheet" href="../static/css/style.css">
+
+  
+</head>
+
+<body ng-app="Collaborators_app" ng-controller="CollaboratorsController">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+<div class='login'>
+  <h2>Add Collaborators</h2>
+  <h2>Enter Teacher email</h2>
+  <input name='Email' placeholder='Email' type='text' ng-model='Email' required ='true'>
+  <h2>Enter the game Name</h2>
+  <input name='gameName' placeholder='gameName' type='text' ng-model='gameName' required ='true'>
+  
+  <input class='animated' type='submit' value='Add'  ng-click='AddCollaborator()'>
+</div>
+  
+   
+
+</body>
+</html>
+

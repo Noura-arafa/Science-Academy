@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Dark Form</title>
+  
+  
+  <script src = "angular.min.js"></script>
+  	
+  	<script src = "../static/js/StudentHome.js"></script>
+      <link rel="stylesheet" href="../static/css/StudentHomestyle.css">
+
+  
+</head>
+
+<body ng-app="studenthome_app" ng-controller="studenthomeController">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+<div class='login'>
+  <h2>Science Academy</h2>
+  <input class='animated' type='submit' value='Notification'  ng-click='Notification()'>
+ <div  ng-repeat="course in courses">
+     <input class='animated' type='submit' value='CourseName: {{course.courseName}}, Created by Prof {{course.teacher.name}}'   ng-click='showgamesincourses(course.courseName)''>
+    </div>
+ 
+ 
+</div>
+  
+   
+
+</body>
+</html>
